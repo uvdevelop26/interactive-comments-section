@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+
+  <!--   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+  <link rel="stylesheet" href="src/css/style.css">
+
+  <title>Frontend Mentor | Interactive comments section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!--  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+
+<body>
+
+  <div class="container">
+
+    <main id="main">
+      <!-- section comment -->
+      <section class="comment-section">
+        <div class="comment-container">
+          <div class="container-flex">
+            <div class="comment-header">
+              <div class="avatar-container">
+                <img src="./images/avatars/image-amyrobson.png" alt="avatar" />
+              </div>
+              <span class="username">amyrobson</span>
+              <span class="submitted">1 month ago</span>
+            </div>
+            <div class="comment-body">
+              <p class="comment-text">
+                Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've
+                nailed the design and the responsiveness at various breakpoints works really well.
+              </p>
+            </div>
+          </div>
+          <div class="comment-footer">
+            <div class="score-button">
+              <button>
+                <img src="./images/icon-plus.svg" alt="plus" />
+              </button>
+              <span class="score">12</span>
+              <button>
+                <img src="./images/icon-minus.svg" alt="minus" />
+              </button>
+            </div>
+            <div class="reply-button">
+              <button>
+                <img src="./images/icon-reply.svg" alt="reply" />
+                Reply
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section comment -->
+      <section class="comment-section">
+        <!-- comment -->
+        <div class="comment-container">
+          <div class="container-flex">
+            <div class="comment-header">
+              <div class="avatar-container">
+                <img src="/images/avatars/image-maxblagun.png" alt="avatar" />
+              </div>
+              <span class="username">maxblagun</span>
+              <span class="submitted">2 weeks ago</span>
+            </div>
+            <div class="comment-body">
+              <p class="comment-text">
+                Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to
+                dive
+                into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
+              </p>
+            </div>
+          </div>
+          <div class="comment-footer">
+            <div class="score-button">
+              <button>
+                <img src="./images/icon-plus.svg" alt="plus" />
+              </button>
+              <span class="score">5</span>
+              <button>
+                <img src="./images/icon-minus.svg" alt="minus" />
+              </button>
+            </div>
+            <div class="reply-button">
+              <button>
+                <img src="./images/icon-reply.svg" alt="reply" />
+                Reply
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- replies -->
+        <div class="replies-section">
+          <!-- reply one -->
+          <div class="comment-container">
+            <div class="container-flex">
+              <div class="comment-header">
+                <div class="avatar-container">
+                  <img src="/images/avatars/image-ramsesmiron.png" alt="avatar" />
+                </div>
+                <span class="username">ramsesmiron</span>
+                <span class="submitted">1 week ago</span>
+              </div>
+              <div class="comment-body">
+                <p class="comment-text">
+                  <span class="name-comment">@maxblagun</span> If you're still new, I'd recommend focusing on the
+                  fundamentals of HTML, CSS,
+                  and JS before
+                  considering React. It's very tempting to jump ahead but lay a solid foundation first.
+                </p>
+              </div>
+            </div>
+            <div class="comment-footer">
+              <div class="score-button">
+                <button>
+                  <img src="/images/icon-plus.svg" alt="plus" />
+                </button>
+                <span class="score">4</span>
+                <button>
+                  <img src="/images/icon-minus.svg" alt="minus" />
+                </button>
+              </div>
+              <div class="reply-button">
+                <button>
+                  <img src="./images/icon-reply.svg" alt="" srcset="">
+                  Reply
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- reply two -->
+          <div class="comment-container">
+            <div class="container-flex">
+              <div class="comment-header">
+                <div class="avatar-container">
+                  <img src="./images/avatars/image-juliusomo.png" alt="avatar" />
+                </div>
+                <span class="username">juliusomo</span>
+                <span class="submitted">2 days ago</span>
+              </div>
+              <div class="comment-body">
+                <p class="comment-text">
+                  <span class="name-comment">@ramsesmiron</span> I couldn't agree more with this. Everything moves so
+                  fast
+                  and it always seems
+                  like everyone
+                  knows the newest library/framework. But the fundamentals are what stay very mutch constant.
+                </p>
+              </div>
+            </div>
+            <div class="comment-footer">
+              <div class="score-button">
+                <button>
+                  <img src="./images/icon-plus.svg" alt="plus" />
+                </button>
+                <span class="score">2</span>
+                <button>
+                  <img src="./images/icon-minus.svg" alt="minus" />
+                </button>
+              </div>
+              <div class="option-buttons">
+                <button>
+                  <img src="./images/icon-delete.svg" alt="delete" />
+                  Delete
+                </button>
+                <button>
+                  <img src="./images/icon-edit.svg" alt="edit" />
+                  Edit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="writte-comment">
+        <textarea name="comment" id="comment" rows="5" class="writte-area"></textarea>
+        <div class="writte-button-container">
+          <div class="avatar-container">
+            <img src="./images/avatars/image-juliusomo.png" alt="avatar" />
+          </div>
+          <button class="btn-send">
+            SEND
+          </button>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+<script src="./src/js/main.js" type="module"></script>
+
+</html>
