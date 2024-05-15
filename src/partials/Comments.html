@@ -1,40 +1,44 @@
-<section class="comment-section" id="commentComponent">
-    <!-- coment -->
-    <div class="comment">
-        <!-- comment header -->
-        <div class="comment-header">
-            <div class="comment-header-data">
-                <div class="image-container">
-                    <img src="./images/avatars/image-maxblagun.png" alt="" id="avatar" />
+<section class="comment-section" id="commentSection">
+    <div class="comment-container">
+        <div class="container-flex">
+            <div class="comment-header">
+                <div class="avatar-container">
+                    <img src="./images/avatars/image-amyrobson.png" alt="avatar" id="avatar" />
                 </div>
-                <span class="user-name" id="userName">maxblagun</span>
-                <span class="comment-time" id="timeSubmitted">2 weeks ago</span>
+                <span class="username" id="username">amyrobson</span>
+                <span class="hidden current-user">you</span>
+                <span class="submitted" id="timestamp">1 month ago</span>
+            </div>
+            <div class="comment-body">
+                <p class="comment-text" id="content">
+                    Impressive! Though it seems the drag feature could be improved. But overall it looks incredible.
+                    You've
+                    nailed the design and the responsiveness at various breakpoints works really well.
+                </p>
             </div>
         </div>
-        <!-- comment content -->
-        <p class="comment-content" id="content">
-            Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive
-            into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
-        </p>
-        <!-- comment footer -->
         <div class="comment-footer">
-            <div class="button-container">
-                <button class="btn">
-                    <img src="./images/icon-plus.svg" alt="" srcset="">
+            <div class="score-button">
+                <button>
+                    <img src="./images/icon-plus.svg" alt="plus" />
                 </button>
-                <span class="score" id="score">5</span>
-                <button class="btn">
-                    <img src="./images/icon-minus.svg" alt="" srcset="">
+                <span class="score" id="score">12</span>
+                <button>
+                    <img src="./images/icon-minus.svg" alt="minus" />
                 </button>
             </div>
-            <button class="btn-reply">
-                <img src="./images/icon-reply.svg" alt="" srcset="">
-                <span>Reply</span>
-            </button>
+            <div class="reply-button">
+                <button id="btnReply">
+                    <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z" />
+                    </svg>
+                    Reply
+                </button>
+            </div>
         </div>
     </div>
-    <!-- Replys section -->
-    <div class="reply-section hidden" id="replySection">
-    
+    <div class="hidden" id="repliesSection">
+
     </div>
 </section>
