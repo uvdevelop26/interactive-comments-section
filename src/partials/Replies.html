@@ -1,51 +1,53 @@
-<div class="comment-container" id="replies">
+<div class="comment-container">
     <div class="container-flex">
         <div class="comment-header">
             <div class="avatar-container">
-                <img src="/images/avatars/image-ramsesmiron.png" alt="avatar" id="replyAvatar" />
+                <img src="/images/avatars/image-ramsesmiron.png" alt="avatar" class="replyAvatar" />
             </div>
             <span class="username" id="usernameReply">ramsesmiron</span>
-            <span class="current-user hidden" id="currentUserReply">you</span>
-            <span class="submitted" id="submittedReply">1 week ago</span>
+            <span class="current-user hidden">you</span>
+            <span class="submitted">1 week ago</span>
+            <div class="reply-button" id="replyButton">
+                <button class="btn-replyButton" id="btnReply">
+                    <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z" />
+                    </svg>
+                    Reply
+                </button>
+            </div>
         </div>
         <div class="comment-body">
-            <p class="comment-text" id="commentText">
-                <span class="name-comment">@maxblagun</span> If you're still new, I'd recommend focusing on the
-                fundamentals of HTML, CSS,
-                and JS before
-                considering React. It's very tempting to jump ahead but lay a solid foundation first.
+            <p class="comment-text">
+                <span class="name-comment">@maxblagun</span>
             </p>
         </div>
     </div>
     <div class="comment-footer">
         <div class="score-button">
-            <button>
+            <button class="btn-plus" type="button" aria-label="plus">
                 <img src="/images/icon-plus.svg" alt="plus" />
             </button>
-            <span class="score" id="scoreReply">4</span>
-            <button>
+            <span class="score">4</span>
+            <button class="btn-minus" type="button" aria-label="minus">
                 <img src="/images/icon-minus.svg" alt="minus" />
             </button>
         </div>
         <div class="reply-button" id="replyButton">
-            <button>
-                <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z" />
-                </svg>
+            <button class="btn-replyButton" type="button" aria-label="reply button">
+                <span class="icon"></span>
                 Reply
             </button>
         </div>
-        <div class="option-buttons hidden" id="optionButtons">
-            <button>
-                
+        <div class="hidden">
+            <button class="btn-delete" type="button" aria-label="delete">
+                <span class="icon"></span>
                 Delete
             </button>
-            <button>
-                
+            <button class="btn-edit" type="button" aria-label="edit">
+                <span class="icon"></span>
                 Edit
             </button>
-
         </div>
     </div>
 </div>
