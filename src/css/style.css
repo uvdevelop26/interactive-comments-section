@@ -81,9 +81,9 @@ main {
   display: none;
 }
 
-/* .comment-header .option-buttons {
+.comment-header .option-buttons {
   display: none;
-} */
+}
 
 .avatar-container {
   width: 32px;
@@ -200,7 +200,7 @@ main {
   }
 
   .comment-header .option-buttons {
-    display: flex;
+    display: none;
     margin-left: auto;
   }
 
